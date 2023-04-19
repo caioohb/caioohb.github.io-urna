@@ -53,10 +53,10 @@ function atualizaInteface() {
         let fotosHtml = '';
         for (let i in candidato.fotos) {
             if (candidato.fotos[i].small) {
-                fotosHtml += `<div class="d-1-image small"><img src="/imagens/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
+                fotosHtml += `<div class="d-1-image small"><img src="${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
 
             } else {
-                fotosHtml += `<div class="d-1-image"><img src="/imagens/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
+                fotosHtml += `<div class="d-1-image"><img src="${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
             }
         }
         lateral.innerHTML = fotosHtml;
